@@ -1,0 +1,36 @@
+/* Kopipiro — gaya tambahan di atas Bootstrap */
+:root {
+    --kp-dark: #3b2417;
+    --kp-brown: #8a5230;
+    --kp-accent: #c8803c;
+    --kp-cream: #faf5ee;
+}
+
+body { background: var(--kp-cream); color: #2d2018; }
+.kp-navbar { background: var(--kp-dark); }
+a { color: var(--kp-brown); }
+
+.btn-kp { background: var(--kp-brown); border-color: var(--kp-brown); color: #fff; }
+.btn-kp:hover, .btn-kp:focus { background: var(--kp-dark); border-color: var(--kp-dark); color: #fff; }
+.btn-outline-kp { border-color: var(--kp-brown); color: var(--kp-brown); }
+.btn-outline-kp:hover, .btn-outline-kp.active { background: var(--kp-brown); color: #fff; }
+
+.kp-hero {
+    background: linear-gradient(135deg, var(--kp-dark), var(--kp-brown));
+    color: #fff; border-radius: 1rem; padding: 2rem;
+}
+.kp-hero .lead { opacity: .9; }
+
+.kp-card { border: 0; border-radius: .9rem; box-shadow: 0 2px 10px rgba(59, 36, 23, .08); overflow: hidden; transition: transform .15s; }
+.kp-card:hover { transform: translateY(-2px); }
+
+.kp-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.kp-img.kp-thumb { width: 56px; height: 56px; aspect-ratio: 1; border-radius: .5rem; font-size: 1.6rem; }
+.kp-img.kp-detail { border-radius: 1rem; aspect-ratio: 1; }
+.kp-ph { display: flex; align-items: center; justify-content: center; background: #eadfd2; font-size: 3rem; }
+
+.kp-stars { color: #e0a100; letter-spacing: 1px; white-space: nowrap; }
+.kp-price-old { text-decoration: line-through; color: #8d7b6e; font-size: .85rem; }
+.kp-price { font-weight: 700; color: var(--kp-dark); }
+.kp-qty { width: 64px; }
+.kp-stat { border-left: 4px solid var(--kp-accent); }
